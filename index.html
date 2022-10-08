@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/91a1f38d53.js" crossorigin="anonymous"></script>
+    <title>Random Password Generator</title>
+</head>
+<body>
+<div class="container-fluid shadow-lg rounded bg-light">
+    <h3>Random Password Generator</h3>
+    <input  class="form-control"type="text" name="password" id="password" placeholder="Generate Random Password" readonly>
+    <div class="radio-input">
+    <label for="s8" class="form-check-label">8 letters</label>
+    <input type="radio"  id="s8" name="size" value ="7" class="form-check-input" onClick="sizeClick()">
+    <label for="s12" class="form-check-label">12 letters</label>
+    <input type="radio"  id="s12" name="size" value="11"class="form-check-input" onClick="sizeClick()">
+    <label for="s16" class="form-check-label">16 letters</label>
+    <input type="radio"  id="s16" name="size" value="15" class="form-check-input"onClick="sizeClick()">
+</div>
+    <button class="btn btn-outline-success" onclick="generatePassword()"><i class="fa-solid fa-gear"></i> Generate Password</button>
+    <button class="btn btn-outline-primary" onclick="copyPassword()"><i class="fa-solid fa-copy"></i> Copy to Clipboard</button>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
