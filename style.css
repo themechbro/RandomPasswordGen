@@ -18,6 +18,10 @@ margin: auto;
     margin-bottom: 4%;
     margin-right: 3%;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    display:inline-block;
+   
+  position:relative;
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
@@ -33,4 +37,14 @@ h3{
     margin-right: 1.5%;
     }.radio-input > label{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.span{
+    display: block;
+    transition: 0.3s ease-in;
+    height:100%;
+    position:relative;
+    top:0%;
+}
+.btn:hover .span:hover{
+top: -100%;
 }

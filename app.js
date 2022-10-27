@@ -2,12 +2,12 @@ var length="";
 function sizeClick(){
     
    if(document.getElementById("s8").checked){
-     length= "7";
+     length= document.getElementById('s8').value;
    }else if (document.getElementById('s12').checked){
-    length="11";
+    length=document.getElementById('s12').value;
    }
    else if (document.getElementById('s16').checked){
-    length="15";
+    length=document.getElementById('s16').value;
    }
    console.log(length);
 
