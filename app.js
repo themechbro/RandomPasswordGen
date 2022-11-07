@@ -16,7 +16,7 @@ function sizeClick(){
 
 
 function generatePassword(){
-var chars= "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-+/?ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var chars= "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 var password= "";
 
